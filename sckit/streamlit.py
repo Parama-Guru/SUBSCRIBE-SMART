@@ -6,9 +6,9 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
 
-model = joblib.load("/Users/guru/vsc/ml/myself/sckit/best_model.joblib")
+model = joblib.load("best_model.joblib")
 # model = load_model('best model/deep_model.keras')
-dataset = pd.read_csv("/Users/guru/vsc/ml/myself/dataset/ml project.csv")
+dataset = pd.read_csv("ml project.csv")
 if 'customerID' in dataset.columns:
         dataset.drop(columns=['customerID'], inplace=True)
 
