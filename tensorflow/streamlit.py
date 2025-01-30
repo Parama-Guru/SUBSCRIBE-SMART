@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 
 #model = joblib.load("/Users/guru/vsc/ml/sckit/best_model.joblib")
 model = load_model('tensorflow/best model/deep_model.keras')
-dataset = pd.read_csv("ml_project.csv")
+dataset = pd.read_csv("tensorflow/ml_project.csv")
 if 'customerID' in dataset.columns:
         dataset.drop(columns=['customerID'], inplace=True)
 
